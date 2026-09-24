@@ -1,7 +1,7 @@
 # Clases de Lenguaje de Marcas y Sistemas de gestión de Información
 ## *1 WEB A*        
-#*ZAIDIN VERGELES*       
-*HUGO GARCÍA MOLINO*
+##*ZAIDIN VERGELES*       
+##*HUGO GARCÍA MOLINO*
 ## LMSGI
 
 hola
