@@ -3,40 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <!-- Metainformación requerida -->
+    <meta name="description" content="Página de ejercicio HTML que muestra el uso de contenido incrustado y marcadores de navegación.">
+    <meta name="author" content="Tu Nombre">
+    <title>Ejercicio HTML: Contenido Incrustado y Marcadores</title>
+    <style>
+        /* Estilo básico para espaciar las secciones y facilitar la prueba de los marcadores */
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        section { margin-bottom: 600px; padding: 20px; border-bottom: 1px dashed #ccc; }
+        nav { position: fixed; top: 10px; right: 10px; background: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Bienvenidos a Mi Página Web</h1>
-        <p> SOY HUGO Y HE CREADO ESTA PAGINA WEB PARA LA ASIGNATURA DE LENGUAJE DE MARCCAS Y SISTEMAS DE GESTIÓN DE INFORMACIÓN.</p>
-    </header>
+    <!-- Título principal de la página -->
+    <h1>Explorando el Contenido Incrustado en HTML</h1>
 
-    <main>
-        <h2>Acerca de Nosotros</h2>
-        <p>Somos una empresa dedicada a ofrecer soluciones web.</p>
+    <!-- Menú de navegación con enlaces a los marcadores -->
+    <nav>
+        <strong>Navegación:</strong>
+        <ul>
+            <li><a href="#seccion-imagen">Ir a la Imagen</a></li>
+            <li><a href="#seccion-video">Ir al Video</a></li>
+        </ul>
+    </nav>
+
+    <p>Bienvenido a esta página de prueba donde aprenderás a enlazar secciones internas e incrustar recursos multimedia.</p>
+
+    <!-- Sección de la Imagen con su respectivo ID (marcador) -->
+    <section id="seccion-imagen">
+        <h2>Sección de la Imagen</h2>
+        <p>A continuación se muestra una imagen de ejemplo con sus atributos de tamaño y texto alternativo configurados:</p>
         
-        <section>
-            <h2>Nuestros Servicios</h2>
-            <!-- Viñetas de tipo abecedario (type="a") -->
-            <ol type="a">
-                <li>Diseño y desarrollo web a medida</li>
-                <li>Optimización SEO y posicionamiento web</li>
-                <li>Mantenimiento y soporte técnico</li>
-            </ol>
-            <!-- Abre en una nueva ventana/pestaña (target="_blank") -->
-            <a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer">Ver más servicios</a>
-        </section>
-    </main>
+        <img src="https://picsum.photos" alt="Paisaje de ejemplo generado aleatoriamente" width="800" height="400">
+        
+        <p><a href="#seccion-video">Saltar directamente al video ▲</a></p>
+    </section>
 
-    <footer>
-        <p>
-            <a href="mailto:info@miempresa.com">Enviar correo electrónico</a> | 
-            <a href="tel:+1234567890">Llamar por teléfono</a>
-        </p>
-        <!-- Entidad HTML &copy; para el símbolo © -->
-        <p>&copy; ESTA  PAGINA WEB FUE CREADA POR HUGO</p>
-    </footer>
+    <!-- Sección del Video con su respectivo ID (marcador) -->
+    <section id="seccion-video">
+        <h2>Sección del Video</h2>
+        <p>Disfruta de este video incrustado directamente desde YouTube utilizando un iframe:</p>
+        
+        <!-- Código iframe estándar de YouTube -->
+        <iframe width="560" height="315" src="https://youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <p><a href="#seccion-imagen">Volver a la imagen ▲</a></p>
+    </section>
 
 </body>
 </html>

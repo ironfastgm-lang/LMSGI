@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página básica sobre las artes marciales de Kung Fu y Sanda.">
+    <meta name="author" content="Tu Nombre">
+    <title>Kung Fu y Sanda</title>
+</head>
+<body>
+
+    <!-- Título Principal -->
+    <h1>El Arte del Kung Fu y Sanda</h1>
+
+    <!-- Menú de Navegación (Marcadores internos) -->
+    <nav>
+        <p>Ir directamente a:</p>
+        <ul>
+            <li><a href="#seccion-imagen">Ver Imagen de Kung Fu</a></li>
+            <li><a href="#seccion-video">Ver Video de Sanda</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Sección de la Imagen con su marcador (id) -->
+    <section id="seccion-imagen">
+        <h2>Kung Fu Tradicional</h2>
+        <p>El Kung Fu es un término que engloba las artes marciales de origen chino basadas en la disciplina y la práctica constante.</p>
+        <img src="https://unsplash.com" 
+             alt="Practicante de Kung Fu en una postura marcial" 
+             width="500" 
+             height="333">
+        <p><a href="#seccion-video">Ir al video de Sanda ↓</a></p>
+    </section>
+
+    <hr>
+
+    <!-- Sección del Video con su marcador (id) -->
+    <section id="seccion-video">
+        <h2>Sanda (Combate Libre)</h2>
+        <p>El Sanda es la modalidad de combate moderno del Kung Fu, donde se permiten golpes de puño, patadas y proyecciones (derribos).</p>
+        <!-- Video de YouTube incrustado mediante iframe -->
+        <iframe width="560" 
+                height="315" 
+                src="https://youtube.com" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+        </iframe>
+        <p><a href="#seccion-imagen">Volver a la imagen de Kung Fu ↑</a></p>
+    </section>
+
+</body>
+</html>
