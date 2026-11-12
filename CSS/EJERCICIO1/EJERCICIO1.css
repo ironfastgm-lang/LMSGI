@@ -1,0 +1,10 @@
+.hero {
+    background-image: url('https://cdn.dipgra.es/my-media-files-bucket/images/Sierra_Nevada_1.f8c4a10f.fill-2500x1300-c100_0Jn6ToI.jpg');
+    
+    height: 600px; 
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
