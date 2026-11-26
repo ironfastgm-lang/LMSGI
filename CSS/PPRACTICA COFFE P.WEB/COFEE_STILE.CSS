@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* Variables */
+:root {
+    --color-fondo: #3b141c;
+    --color-acento: #f3961c;
+    --color-texto: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.site-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.logo {
+    color: var(--color-texto);
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: var(--color-texto);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--color-acento);
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 35px;
+    padding-bottom: 65px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 520px;
+}
+
+.subtitle {
+    margin-bottom: 12px;
+    color: var(--color-acento);
+    font-family: "Kaushan Script", cursive;
+    font-size: 32px;
+}
+
+.hero-content h1 {
+    max-width: 500px;
+    margin-bottom: 20px;
+    color: var(--color-texto);
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.description {
+    max-width: 470px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    border: 2px solid var(--color-acento);
+    border-radius: 50px;
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--color-acento);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 760px) {
+    .container {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+        padding-top: 45px;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(30px, 8vw, 38px);
+    }
+
+    .hero-image img {
+        max-width: min(100%, 420px);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        justify-content: flex-start;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+}
+.popular-coffees {
+    padding-top: 28px;
+    padding-bottom: 48px;
+    text-align: center;
+}
+
+.popular-coffees h2 {
+    margin-bottom: 22px;
+    font-size: 28px;
+}
+
+.country-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
